@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang=en>
+	<head>
+
+		<meta charset= "utf-8">
+		<meta name= "description" content= "Number Guessing Game">
+		<meta name= "author" content= "AV Hamilton">
+		<meta name= "keywords" content= "Building a website from scratch">
+
+		<title>Sparring | Training</title>
+
+		<style>
+			html {
+				font-family: san-serif;
+			}
+
+			body {
+				width: 50%;
+				max-width: 800px;
+				min-width: 480px;
+				margin: 0 auto;
+			}
+
+			.lastResult {
+				color: white;
+				padding: 3px;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+		<h1>Sparring | Training</h1>
+
+		<!-- Game instructions -->
+
+		<h2>Number Guessing Game</h2>
+		<p>A random number was selected between 1 and 100. <br>See if you can guess it in 10 turns or less, within 30 seconds. <br>We'll let you know if your guess was too low or too high.</p>
+
+		<div class="form">
+			<label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
+			<input type="submit" value="Submit guess" class="guessSubmit">
+		</div>
+
+		<!-- Timer -->
+
+		<div id="timer-text" class="timer"></div>
+		<h3>Timer: </h3>
+		<p id="demo">30</p>
+
+		<!-- Guess Results -->
+
+		<div class="resultParas">
+			<p class="guesses"></p>
+			<p class="lastResult"></p>
+			<p class="lowOrHi"></p>
+		</div>
+
+		<!-- Game Scripts -->
+
+		<script src="scripts/ngg-2.js"></script>
+
+	</body>
+
+</html>
